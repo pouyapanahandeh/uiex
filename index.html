@@ -7,22 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <style type="text/css">
-                
+        
+        body{
+            margin: 0% auto;
+            padding: 0%;
+        }
+
         audio{
             display: none;
         }
 
-        /* ul{
-            display: none;
-        } */
-
         .sidenav {
             height: 100%;
             width: 0;
-            position: fixed;
+            position: absolute;
             z-index: 1;
-            top: 0;
-            left: 0;
             background-color: #111;
             overflow-x: hidden;
             transition: 0.5s;
@@ -53,20 +52,19 @@
     <!-- side nav section-->
     <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+            <a href="#">When</a>
+            <a href="#">AI guy</a>
+            <a href="#">move to</a>
+            <a href="#">frontend</a>
     </div>
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-
     <!-- audio section-->
     <audio controls autoplay>
         <source src="iraneman.mp3" type="audio/mpeg">
     </audio>
 
     <div id="demo" class="carousel slide" data-ride="carousel">
-        <ul class="carousel-indicators" style="display: none;">
+        <ul class="carousel-indicators">
           <li data-target="#demo" data-slide-to="0" class="active"></li>
           <li data-target="#demo" data-slide-to="1"></li>
           <li data-target="#demo" data-slide-to="2"></li>
@@ -74,20 +72,21 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <!-- <video src="iran.mp4" alt="" width="100%" height="100%" controls autoplay></video> -->
+            <img src="imageOne.jpg" width="100%" height="100%">
             <div class="carousel-caption">
               <h3>Los Angeles</h3>
               <p>We had such a great time in LA!</p>
             </div>   
           </div>
           <div class="carousel-item">
-            <img src="chicago.jpg" alt="Chicago" width="1100" height="500">
+            <img src="imageOne.jpg" alt="persian gulf" width="100%" height="100%">
             <div class="carousel-caption">
               <h3>Chicago</h3>
               <p>Thank you, Chicago!</p>
             </div>   
           </div>
           <div class="carousel-item">
-            <img src="ny.jpg" alt="New York" width="1100" height="500">
+            <img src="imageOne.jpg" alt="jonoob" width="100%" height="100%">
             <div class="carousel-caption">
               <h3>New York</h3>
               <p>We love the Big Apple!</p>
